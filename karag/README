@@ -1,0 +1,5 @@
+Rename Docker_first_iteration start and after build go to inside container and manualy install Ubilling
+after install, commit changes and create new image with installed app.
+Second iteration is add to inside container script who run apache, mysql and stargazer. run container withseparated key directory.
+key folder are /var/www and /var/lib/mysql
+docker run -dit --name kar-container -p 8181:80 --cpus="1" --memory="400m" -v mysql_kar:/var/lib/mysql -v www_kar:/var/www --restart="always"  ubuntu_test_v2:latest
