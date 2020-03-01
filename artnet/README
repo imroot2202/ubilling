@@ -1,5 +1,4 @@
-Rename Docker_first_iteration start and after build go to inside container and manualy install Ubilling
-after install, commit changes and create new image with installed app.
-Second iteration is add to inside container script who run apache, mysql and stargazer. run container withseparated key directory.
+Download image with installed app docker.pkg.github.com/imroot2202/ubilling/ubuntu_test_v2:latest
+run container withseparated key directory.
 key folder are /var/www and /var/lib/mysql
 docker run -dit --name artnet-container -p 8080:80 --cpus="1" --memory="750m" -v mysql_art:/var/lib/mysql -v www_art:/var/www --restart="always"  ubuntu_test_v2:latest
