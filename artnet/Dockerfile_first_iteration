@@ -1,6 +1,0 @@
-FROM ubuntu:18.04
-EXPOSE 80:80
-RUN apt-get update && apt-get -y install vim apt-utils software-properties-common dirmngr apt-transport-https lsb-release ca-certificates wget make cmake sudo
-RUN apt-get update && add-apt-repository -y ppa:ondrej/php
-RUN wget http://linux.ubilling.net.ua/UbuInstaller.tar.gz
-RUN tar -zxvf ./UbuInstaller.tar.gz

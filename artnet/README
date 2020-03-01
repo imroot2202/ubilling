@@ -1,4 +1,4 @@
 Download image with installed app docker.pkg.github.com/imroot2202/ubilling/ubuntu_test_v2:latest
-run container withseparated key directory.
+run container with separated key directory.
 key folder are /var/www and /var/lib/mysql
-docker run -dit --name artnet-container -p 8080:80 --cpus="1" --memory="750m" -v mysql_art:/var/lib/mysql -v www_art:/var/www --restart="always"  ubuntu_test_v2:latest
+docker run -dit --name artnet-container -p 8080:80 --cpus="1" --memory="300m" -v mysql_art:/var/lib/mysql -v www_art:/var/www --restart="always"  ubuntu_test_v2:latest
